@@ -47,12 +47,10 @@ const teamCards = [
 
 // Variabile che contiene il team-container del dom
 const teamContainer = document.querySelector('.team-container');
-console.log(teamContainer)
 
 // per ogni membro ottengo le singole informazioni
 for ( let i = 0; i < teamCards.length; i++) {
     let singleMember = teamCards[i];
-    console.log(singleMember)
     
     // Inserisco i dati dei singoli membri all'interno di un template nel dom
     teamContainer.innerHTML += `
@@ -67,6 +65,6 @@ for ( let i = 0; i < teamCards.length; i++) {
             <h3>${singleMember.name}</h3>
             <p>${singleMember.role}</p>
         </div>
-  </div>`;
+    </div>`;
   
 }
